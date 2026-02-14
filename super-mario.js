@@ -33,12 +33,12 @@ function setup() {
   swayTree.resize (300,280)  
   swayTree2.resize (410,300)
   swayTree3.resize (350,300)
-  swayTree4.resize (300,300)
+  swayTree4.resize (300,320)
 }
 
 function draw() {
   background(120, 190, 255); // sky
-   image(scarySun, 100, 10);
+   image(scarySun, 80, 10);
  
   image(swayTree, 200, 90)  
   image(swayTree2, 300, 40)
@@ -46,7 +46,7 @@ function draw() {
   image(swayTree3, 0,40)
   image(swayTree4, 400,50)
   image(swayTree4, -100,50)
-
+  image(swayTree, 260,50)
 
 
   // ground
