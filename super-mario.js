@@ -5,6 +5,10 @@ let swayTree;
 let swayTree2;
 let swayTree3;
 let swayTree4;
+let bush1;
+let bush2;
+let flower1;
+let flower2;
 
 // Player position
 let x = 100;
@@ -25,6 +29,10 @@ function preload() {
   swayTree2 = loadImage('https://i.imgur.com/dhx2Ob9.gif')
   swayTree3 = loadImage('https://i.imgur.com/alo9JGY.gif')
   swayTree4 = loadImage('https://i.imgur.com/WglStnp.gif')
+  bush1 = loadImage('https://i.imgur.com/mtOqz2Q.gif')
+  bush2 = loadImage('https://i.imgur.com/HJKJ1YM.gif')
+  flower1 = loadImage('https://i.imgur.com/SZcURof.gif')
+  flower2 = loadImage('https://i.imgur.com/LYdbEvK.gif')
 }
 
 function setup() {
@@ -34,19 +42,36 @@ function setup() {
   swayTree2.resize (410,300)
   swayTree3.resize (350,300)
   swayTree4.resize (300,320)
+  bush1. resize (200,200)
+  bush2. resize (200,150)
+  flower1. resize (90,90)
+  flower2. resize (80,80)
 }
 
 function draw() {
   background(120, 190, 255); // sky
-   image(scarySun, 80, 10);
- 
+   image(scarySun, 70, 10);
   image(swayTree, 200, 90)  
-  image(swayTree2, 300, 40)
+ push();
+ rotate(PI/43);
+ image(swayTree2, 300, 10)
+  pop();
   image(swayTree3, 100,60)
-  image(swayTree3, 0,40)
-  image(swayTree4, 400,50)
+  push();
+ rotate(-PI/24);
+  image(swayTree3, -30,60)
+  pop();
+  push();
+ rotate(-PI/24);
+  image(swayTree4, 400,90)
+  pop();
   image(swayTree4, -100,50)
   image(swayTree, 260,50)
+   image(bush1, 0,200)
+  image(bush2,450,250)
+  image(flower1, 160,250)
+  image(flower2, 70,270)
+
 
 
   // ground
