@@ -53,29 +53,29 @@ function draw() {
    image(scarySun, 70, 10);
   image(swayTree, 200, 90)  
  push();
- rotate(PI/43);
- image(swayTree2, 300, 10)
+     rotate(PI/43);
+     image(swayTree2, 300, 10)
   pop();
   image(swayTree3, 100,60)
   push();
- rotate(-PI/24);
-  image(swayTree3, -30,60)
+     rotate(-PI/24);
+      image(swayTree3, -30,60)
   pop();
   push();
- rotate(-PI/24);
-  image(swayTree4, 400,90)
+     rotate(-PI/24);
+      image(swayTree4, 400,90)
   pop();
   image(swayTree4, -100,50)
-  image(swayTree, 260,50)
+  image(swayTree, 260,55)
    image(bush1, 0,200)
   image(bush2,450,250)
   image(flower1, 160,250)
-  image(flower2, 70,270)
+  image(flower2, 70,265)
 
 
 
   // ground
-  fill(60, 200, 90);
+  fill(34, 139, 34);
   rect(0, 330, width, 70);
 
   updateJump();
